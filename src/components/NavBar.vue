@@ -8,16 +8,16 @@
         </h1>
         <ul>
             <li>
-                <a href="#">Home</a>
+                <RouterLink to="/">Home</RouterLink>
             </li>
             <li>
-                <a href="#">Articles</a>
+                <RouterLink to="/articles">Articles</RouterLink>
             </li>
             <li>
-                <a href="#">Tags</a>
+                <RouterLink to="/tags">Tags</RouterLink>
             </li>
             <li>
-                <a href="#">About</a>
+                <RouterLink to="/about">About</RouterLink>
             </li>
         </ul>
     </nav>
@@ -25,10 +25,27 @@
 <style scoped>
     nav {
         display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 30px;
+    }
+    nav ul {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    nav ul li {
+        margin-right: 30px;
+    }
+
+
+    /* nav {
+        display: flex;
         justify-content: space-around;
         background-color: blanchedalmond;
         padding: 20px;
         margin-bottom: 30px;
+        width: 100%;
+        top: 0;
     }
 
     ul {
@@ -50,6 +67,6 @@
 
     nav ul a {
         font-size: 24px;
-    }
+    } */
 
 </style>

@@ -1,15 +1,11 @@
 <script lang="ts" setup>
     import NavBar from '../components/NavBar.vue';
-    // const goBack = () => {
-    //     console.log('go back')
-    // }
+    import SideBar from '../components/SideBar.vue';
+    import SingleArticle from '../components/SingleArticle.vue';
+
 </script>
 
 <template>
-    <!-- <NavBar />
-    <h2>
-        This is a home page.
-    </h2> -->
     <div class="common-layout">
         <el-container>
             <el-header>
@@ -17,15 +13,23 @@
                 <!-- <el-page-header content="detail" @back="goBack" /> -->
             </el-header>
             <el-container>
-                <el-aside width="200px">Aside</el-aside>
-                <el-main>Main</el-main>
+                <el-aside width="200px">
+                    <SideBar></SideBar>
+                </el-aside>
+                <el-main>
+                    <SingleArticle />
+                </el-main>
             </el-container>
         </el-container>
     </div>
+    
 </template>
 
 <style lang="css" scoped>
-    el-container {
-        display: flex;
+    .el-header {
+        margin: 30px;
     }
+    /* .el-aside {
+        overflow: hidden;
+    } */
 </style>
