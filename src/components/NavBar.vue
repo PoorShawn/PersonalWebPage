@@ -27,7 +27,9 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin: 30px;
+        left: 0;
+        width: 100%;
+        margin-left: 30px;
     }
     nav ul {
         display: flex;
@@ -35,6 +37,24 @@
     }
     nav ul li {
         margin-right: 30px;
+    }
+    .logo {
+        font-size: 36px;
+    }
+    nav a {
+        margin-right: 20px;
+        text-decoration: none;
+        color:rgb(43, 42, 42);
+        font-weight: bold;
+    }
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+    }
+    nav ul a {
+        font-size: 24px;
     }
 
 

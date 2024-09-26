@@ -11,6 +11,7 @@
   "dependencies": {
     "@kangc/v-md-editor": "^2.3.18",
     "element-plus": "^2.8.3",
+    "mitt": "^3.0.1",
     "vue": "^3.4.37",
     "vue-router": "^4.4.5"
   },
